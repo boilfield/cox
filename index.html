@@ -73,7 +73,13 @@
 //                     var html = '<a href="'+imgPath+'" target="_blank"><img width="200px" src="'+imgPath+'"</img></a><br/>';
                     var html = '<br/>';
                     html += 'Collector Name: <b>' + feature.properties.created + '</b><br/>';
+                    html += 'Upazila: <b>' + feature.properties.Upazila + '</b><br/>';
                     html += 'Union: <b>' + feature.properties.Union + '</b><br/>';
+                    html += 'Ward: <b>' + feature.properties.Ward + '</b><br/>';
+                    html += 'CAP ID: <b>' + feature.properties.HH_CAP_ID + '</b><br/>';
+                    html += 'HH HeadName: <b>' + feature.properties.HC5_HHHeadName + '</b><br/>';
+                    html += 'Respondent: <b>' + feature.properties.Wash_HC3_gender + '</b><br/>';
+                    html += 'Family Members: <b>' + feature.properties.Wash_HC4FamilyMembers + '</b><br/>';
 
                     layer.bindPopup(html);
                 }

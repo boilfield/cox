@@ -32,12 +32,19 @@
     <script>
         var map = L.map('map').setView([23.7350,90.3805], 14);
         
-        L.tileLayer('http://www.google.cn/maps/vt?lyrs=s@189&gl=cn&x={x}&y={y}&z={z}', {
+        L.tileLayer('https://mt1.google.com/vt/lyrs=y&x={x}&y={y}&z={z}', {
             opacity: 1.0,
             attribution: '',
-        })
-        // layer_GoogleSatellite_0;
-         .addTo(map);
+        }).addTo(map);
+        
+        
+        
+//         ('http://www.google.cn/maps/vt?lyrs=s@189&gl=cn&x={x}&y={y}&z={z}', {
+//             opacity: 1.0,
+//             attribution: '',
+//         })
+//         // layer_GoogleSatellite_0;
+//          .addTo(map);
         
         
 //         L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw', {

@@ -71,7 +71,7 @@
                 onEachFeature: function(feature, layer) {
                     var imgPath = feature.properties.imgPath;
                     var html = '<a href="'+imgPath+'" target="_blank"><img width="200px" src="'+imgPath+'"</img></a><br/>';
-                    html += 'Amenity: <b>' + feature.properties.gpsTimeStr + '</b><br/>';
+                    html += 'Collector Name: <b>' + feature.properties.created + '</b><br/>';
                     html += 'Address: <b>' + feature.properties.imgTimeStr + '</b><br/>';
 
                     layer.bindPopup(html);

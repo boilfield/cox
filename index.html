@@ -42,16 +42,17 @@
         }).addTo(map);
         
         
+	// control that shows state info on hover
         var info = L.control();
 
 	info.onAdd = function (map) {
-// 		this._div = L.DomUtil.create('div', 'info');
+		this._div = L.DomUtil.create('div', 'info');
 		this.update();
-// 		return this._div;
+		return this._div;
 	};
 
 	info.update = function (props) {
-		this._div.innerHTML = '<h4>Map Dhaka for Field Report</h4>' +'</b><br />'Last updated : 26/01/2020');
+		this._div.innerHTML = '<h4>Map Field Report</h4>' +'</b><br />'Last updated : 26/01/2020');
 	};
 
 	info.addTo(map);

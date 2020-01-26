@@ -42,6 +42,21 @@
         }).addTo(map);
         
         
+        var info = L.control();
+
+	info.onAdd = function (map) {
+// 		this._div = L.DomUtil.create('div', 'info');
+		this.update();
+// 		return this._div;
+	};
+
+	info.update = function (props) {
+		this._div.innerHTML = '<h4>Map Dhaka for Field Report</h4>' +'</b><br />'Last updated : 26/01/2020');
+	};
+
+	info.addTo(map);
+        
+        
         
 //         ('http://www.google.cn/maps/vt?lyrs=s@189&gl=cn&x={x}&y={y}&z={z}', {
 //             opacity: 1.0,

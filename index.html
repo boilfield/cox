@@ -71,8 +71,8 @@
                 onEachFeature: function(feature, layer) {
                     var imgPath = feature.properties.imgPath;
 //                     var html = '<a href="'+imgPath+'" target="_blank"><img width="200px" src="'+imgPath+'"</img></a><br/>';
-                    var html = '<br/>';
-                    html +='<h6 style="text-align: center;">Data Values</h6>';
+//                     var html = '<br/>';
+                var html ='<h2 style="text-align: center;">Data Values</h2>';
                     html +='<hr>';
                     html += 'Collector Name: <b>' + feature.properties.created + '</b><br/>';
                     html += 'Upazila: <b>' + feature.properties.Upazila + '</b><br/>';

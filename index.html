@@ -30,7 +30,9 @@
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 
     <script>
-        var map = L.map('map').setView([21.1088,92.1849], 10);
+        var map = L.map('map').setView([23.634,90.648], 7);
+//        Cox 21.1088,92.1849 10
+//        Bd Full 7/23.634/90.648
         
         L.tileLayer('https://mt1.google.com/vt/lyrs=y&x={x}&y={y}&z={z}', {
             opacity: 1.0,
@@ -67,7 +69,7 @@
             }
             var layer = L.geoJson(geojson, {
                 onEachFeature: function(feature, layer) {
-//                     var imgPath = feature.properties.imgPath;
+                    var imgPath = feature.properties.imgPath;
 //                     var html = '<a href="'+imgPath+'" target="_blank"><img width="200px" src="'+imgPath+'"</img></a><br/>';
                     html += 'Amenity: <b>' + feature.properties.gpsTimeStr + '</b><br/>';
                     html += 'Address: <b>' + feature.properties.imgTimeStr + '</b><br/>';

@@ -36,26 +36,12 @@
         
         L.tileLayer('https://mt1.google.com/vt/lyrs=y&x={x}&y={y}&z={z}', {
             opacity: 1.0,
-//             attribution: '',
             attribution: 'Map data &copy; <a href="http://cxb-wash.info/" target="_blank">Coxs Bazar GOB-UNICEF WASH Programme</a> contributors, ' +'Builder &copy; <a href="https://arahmandc.github.io/" target="_blank">Atikur Rahman</a>, '+
             'Imagery © <a href="https://www.google.com/maps/" target="_blank">Google Hyderabad</a>',
         }).addTo(map);
         
         
-	// control that shows state info on hover
-        var info = L.control();
 
-	info.onAdd = function (map) {
-		this._div = L.DomUtil.create('div', 'info');
-		this.update();
-		return this._div;
-	};
-
-	info.update = function (props) {
-		this._div.innerHTML = '<h4>Map Field Report</h4>' +'</b><br />' updated : 26/01/2020');
-	};
-
-	info.addTo(map);
         
         
         
@@ -98,6 +84,7 @@
                     html += 'HH HeadName: <b>' + feature.properties.HC5_HHHeadName + '</b><br/>';
                     html += 'Respondent: <b>' + feature.properties.Wash_HC3_gender + '</b><br/>';
                     html += 'Family Members: <b>' + feature.properties.Wash_HC4FamilyMembers + '</b><br/>';
+		    html += 'Creation Time: <b>' + feature.properties.create_time + '</b><br/>';
                     html +='<hr>';
                     html += '<a href="http://boiledbhoot.org/" target="_blank"><img width="200px" src="https://raw.githubusercontent.com/boilfield/cox/master/logo.jpg"</img></a><br/>';
 

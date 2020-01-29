@@ -45,7 +45,7 @@ function exifToFeature(exifData) {
                                    gps.GPSTimeStamp[0],
                                    gps.GPSTimeStamp[1],
                                    gps.GPSTimeStamp[2] ) );
-  feat.properties.Union = gpsDate.getTime();
+  feat.properties.WASH_HandingWashingImage = gpsDate.getTime();
   feat.properties.created = gpsDate.toString();
 
   // time the actual picture was taken.

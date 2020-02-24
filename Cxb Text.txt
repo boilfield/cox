@@ -18,6 +18,6 @@ Respondent:			Wash_HC3_gender			BA		Yes
 Family Members:			Wash_HC4FamilyMembers		BE		No
 Creation Time:			create_time			J		No
 Geo Location:			yx				AZ		Yes
-
+image:            Wash_HSO2Image  No
 
 Must be Save as "exif.geojson" named.

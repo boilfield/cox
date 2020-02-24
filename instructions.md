@@ -6,7 +6,7 @@ Created By [Atikur Rahman](https://arahmandc.github.io/ "https://arahmandc.githu
 
 # Instractions
 
-  : **Have To download every implementation agencies data separately.**
+   :  **Have To download every implementation agencies data separately.**
 
 | NGOF Cats1  | NGOF Cats4   | DSK     | VERC            |
 |-------------|--------------|---------|-----------------|

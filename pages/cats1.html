@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 
-    <title>NGOF | CATS1</title>
+    <title>NGOF | CATS4</title>
 
     <link rel="shortcut icon" type="image/x-icon" href="../favicon.ico">
 
@@ -42,7 +42,7 @@
       <!-- ################################################################################################ -->
          <ul class="clear">
         <li><a href="../index.html">Project Area</a></li>
-        <li><a class="drop" >Field Data</a>
+        <li><a class="drop">Field Data</a>
            <ul>
             <li><a href="../pages/cats1.html">NGOF । CATS1</a></li>
             <li><a href="../pages/cats4.html">NGOF । CATS4</a></li>
@@ -50,7 +50,7 @@
             <li><a href="../pages/dsk.html">DSK</a></li>
           </ul>
         </li>
-        <li><a class="drop" >Help</a>
+        <li><a class="drop">Help</a>
           <ul>
             <li><a href="../pages/que.html">Questionnaires</a></li>
             <li><a href="../pages/inventory_approval.html">Inventory Approval</a></li>
@@ -81,7 +81,7 @@
             'Imagery © <a href="https://www.google.com/maps/" target="_blank">Google Hyderabad</a>',
         }).addTo(map);
         
-        $.get('../data/cats1.geojson', function (data) {
+        $.get('../data/cats4.geojson', function (data) {
             var geojson = null;
             if (typeof data === 'string') {
                 geojson = JSON.parse(data)
@@ -107,7 +107,7 @@
                     html += 'Family Members: <b>' + feature.properties.Wash_HC4FamilyMembers + '</b><br/>';
                     html += 'Creation Time: <b>' + feature.properties.create_time + '</b><br/>';
                     html +='<hr>';
-                    html += '<a href="http://boiledbhoot.org/" target="_blank"><img width="200px" src="https://raw.githubusercontent.com/boilfield/cox/images/master/logo.jpg"</img></a><br/>';
+                    html += '<a href="http://boiledbhoot.org/" target="_blank"><img width="200px" src="https://raw.githubusercontent.com/boilfield/cox/master/images/logo.jpg"</img></a><br/>';
 
                     layer.bindPopup(html);
                 }

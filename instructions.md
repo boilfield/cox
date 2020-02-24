@@ -6,6 +6,19 @@ Created By [Atikur Rahman](https://arahmandc.github.io/ "https://arahmandc.githu
 
 # Instractions
 
+Have To download every implementation agencies data separately.
+
+| NGOF Cats1  | NGOF Cats4   | DSK     | VERC            |
+|-------------|--------------|---------|-----------------|
+| Ukhiya      | Ashrayan 21  | Teknaf  | Pekua, Chakaria | 
+
+
+
+
+
+
+**Then We need those Excel Columns for upadeting map data**
+
 | Data List			     | Column Name Need		     | Find Column		| Rename Needed |
 |--------------------|-------------------------|----------------|--------------- |
 | Collector Name:	   | *created_by*				     | JV					    | No

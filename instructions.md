@@ -6,7 +6,7 @@ Created By [Atikur Rahman](https://arahmandc.github.io/ "https://arahmandc.githu
 
 # Instractions
 
-Have To download every implementation agencies data separately.
+  : **Have To download every implementation agencies data separately.**
 
 | NGOF Cats1  | NGOF Cats4   | DSK     | VERC            |
 |-------------|--------------|---------|-----------------|
@@ -14,10 +14,7 @@ Have To download every implementation agencies data separately.
 
 
 
-
-
-
-**Then We need those Excel Columns for upadeting map data**
+   : **Then need this  Columns for updating map from excel file.**
 
 | Data List			     | Column Name Need		     | Find Column		| Rename Needed |
 |--------------------|-------------------------|----------------|--------------- |
@@ -34,10 +31,15 @@ Have To download every implementation agencies data separately.
 | Toilet photo:      | *Wash_HSO2Image*  		   |					      | No |
 
 
-**Note: Only First photo link will priorities**.
+   :  **Note: Only First photo link will priorities**.
 
 Example : http://cxb-wash.info/Upload/media/f539df99-c983-25d9-cb80-501012db9785.jpg
 
+   : **Rename the files**
+
 Must be Save as **NGOF Cats4** or **Ashrayan Areas**  *cats4.geojson*, **NGOF Cats1** or others *cats1.geojson*, **DSK** *dsk.geojson* and for **VERC** *verc.geojson* named.
+
+   : **Upload File**
+   
 Then Upload all geojson in [**data**](https://github.com/boilfield/cox/tree/master/data "Data") folder 
 

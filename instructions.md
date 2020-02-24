@@ -10,7 +10,7 @@ Created By [Atikur Rahman](https://arahmandc.github.io/ "https://arahmandc.githu
 
 | NGOF Cats1  | NGOF Cats4   | DSK     | VERC            |
 |-------------|--------------|---------|-----------------|
-| Ukhiya      | Ashrayan 21  | Teknaf  | Pekua, Chakaria | 
+| Ukhiya      | 21 Ashrayan  | Teknaf  | Pekua, Chakaria | 
 
 
 
@@ -35,11 +35,11 @@ Created By [Atikur Rahman](https://arahmandc.github.io/ "https://arahmandc.githu
 
 Example : http://cxb-wash.info/Upload/media/f539df99-c983-25d9-cb80-501012db9785.jpg
 
-   : **Rename the files**
+   * **Rename the files**
 
 Must be Save as **NGOF Cats4** or **Ashrayan Areas**  *cats4.geojson*, **NGOF Cats1** or others *cats1.geojson*, **DSK** *dsk.geojson* and for **VERC** *verc.geojson* named.
 
-   : **Upload File**
+   * **Upload File**
    
 Then Upload all geojson in [**data**](https://github.com/boilfield/cox/tree/master/data "Data") folder 
 

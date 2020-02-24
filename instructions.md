@@ -1,5 +1,3 @@
-# Instractions
-
 https://boilfield.github.io/cox/
 
 =====+++========
@@ -10,28 +8,27 @@ https://arahmandc.github.io/
 
 
 
+# Instractions
 
-
-|Data List			|Column Name Need		|Find Column		|Rename Needed |
-|...............|...................|...............|............. |
-
-|Collector Name:	|created_by				|JV					|No
-|Upazila: 			|Upazila				|C					|No
-|Union:				|Union					|D					|No
-|Ward:				|Ward					|E					|No
-|CAP ID:			|HH_CAP_ID				|GY					|No
-|HH HeadName:		|HC5_HHHeadName			|GX					|Yes	
-|Respondent:		|Wash_HC3_gender		|BA					|Yes	
-|Family Members:	|Wash_HC4FamilyMembers	|BE					|No
-|Creation Time:		|create_time			|J					|No
-|Geo Location:		|yx						|AZ					|Yes
-|Toilet photo:      |Wash_HSO2Image  		|					|No |
+| Data List			     | Column Name Need		     | Find Column		| Rename Needed |
+|--------------------|-------------------------|----------------|--------------- |
+| Collector Name:	   | created_by				       | JV					    | No
+| Upazila: 			     | Upazila				         | C					    | No
+| Union:				     | Union					         | D					    | No
+| Ward:				       | Ward					           | E					    | No
+| CAP ID:			       | HH_CAP_ID				       | GY					    | No
+| HH HeadName:		   | HC5_HHHeadName			     | GX					    | Yes	
+| Respondent:		     | Wash_HC3_gender		     | BA					    | Yes	
+| Family Members:	   | Wash_HC4FamilyMembers	 | BE					    | No
+| Creation Time:		 | create_time			       | J					    | No
+| Geo Location:		   | yx						           | AZ					    | Yes
+| Toilet photo:      | Wash_HSO2Image  		     |					      | No |
 
 
 
 | Data List                  | Column Name Need                                                                            |Find Column                                      |
 |------------------------|-----------------------------------------------------------------------------------------|---------------------------------------------|
-| Tasauf A Baki Billah   | [tasauf1980](https://www.openstreetmap.org/user/tasauf1980)                             |Active                                       |
+| Tasauf A Baki Billah   |*created_by*{: style="color: blue"}                            |Active                                       |
 | Sawan Shariar          | [Sawan Shariar](https://www.openstreetmap.org/user/Sawan%20Shariar)                     |Active                                       |
 | Atikur Rahman          | [Atikur Rahman atik](https://www.openstreetmap.org/user/Atikur%20Rahman%20atik)         |Active                                       |
 | Bidhan Bhuson Roy      | [bbroy13](https://www.openstreetmap.org/user/bbroy13)                                   |Active                                       |

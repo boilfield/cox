@@ -73,7 +73,9 @@
             var layer = L.geoJson(geojson, {
                 onEachFeature: function(feature, layer) {
                     var imgPath = feature.properties.WASH_HandingWashingImage;
-                    var html = '<a href="'+imgPath+'" target="_blank"><img width="200px" src="'+imgPath+'"</img></a><br/>';
+                    console.log(imgPath);
+                    console.log("www."+imgPath);
+                    var html = '<a href="www.'+imgPath+'" target="_blank"><img width="200px" src="www.'+imgPath+'"</img></a><br/>';
                     html +='<hr>';
                     html +='<h2 style="text-align: center;">Details</h2>';
                     html +='<hr>';

@@ -6,7 +6,7 @@ Created By [Atikur Rahman](https://arahmandc.github.io/ "https://arahmandc.githu
 
 # Instractions
 
-   :  **Have To download every implementation agencies data separately.**
+   +  **Have To download every implementation agencies data separately.**
 
 | NGOF Cats1  | NGOF Cats4   | DSK     | VERC            |
 |-------------|--------------|---------|-----------------|
@@ -14,7 +14,7 @@ Created By [Atikur Rahman](https://arahmandc.github.io/ "https://arahmandc.githu
 
 
 
-   : **Then need this  Columns for updating map from excel file.**
+   - **Then need this  Columns for updating map from excel file.**
 
 | Data List			     | Column Name Need		     | Find Column		| Rename Needed |
 |--------------------|-------------------------|----------------|--------------- |
@@ -31,7 +31,7 @@ Created By [Atikur Rahman](https://arahmandc.github.io/ "https://arahmandc.githu
 | Toilet photo:      | *Wash_HSO2Image*  		   |					      | No |
 
 
-   :  **Note: Only First photo link will priorities**.
+   *  **Note: Only First photo link will priorities**.
 
 Example : http://cxb-wash.info/Upload/media/f539df99-c983-25d9-cb80-501012db9785.jpg
 

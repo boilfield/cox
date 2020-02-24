@@ -72,7 +72,7 @@
             }
             var layer = L.geoJson(geojson, {
                 onEachFeature: function(feature, layer) {
-                    var imgPath = feature.properties.WASH_HandingWashingImage;
+                    var imgPath = feature.properties.Wash_HSO2Image;
                     console.log(imgPath);
                     console.log("http://"+imgPath);
                     var html = '<a href="http://'+imgPath+'" target="_blank"><img width="200px" src="http://'+imgPath+'"</img></a><br/>';

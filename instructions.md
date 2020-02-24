@@ -13,7 +13,7 @@ https://arahmandc.github.io/
 
 
 |Data List			|Column Name Need		|Find Column		|Rename Needed |
-|...................|.......................|...................|............. |
+|...............|...................|...............|............. |
 
 |Collector Name:	|created_by				|JV					|No
 |Upazila: 			|Upazila				|C					|No

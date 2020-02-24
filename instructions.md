@@ -12,8 +12,8 @@ https://arahmandc.github.io/
 
 
 
-|Data List			|Column Name Need		|Find Column		|Rename Needed
-|...................|.......................|...................|.............
+|Data List			|Column Name Need		|Find Column		|Rename Needed |
+|...................|.......................|...................|............. |
 
 |Collector Name:	|created_by				|JV					|No
 |Upazila: 			|Upazila				|C					|No
@@ -25,7 +25,7 @@ https://arahmandc.github.io/
 |Family Members:	|Wash_HC4FamilyMembers	|BE					|No
 |Creation Time:		|create_time			|J					|No
 |Geo Location:		|yx						|AZ					|Yes
-|Toilet photo:      |Wash_HSO2Image  		|					|No
+|Toilet photo:      |Wash_HSO2Image  		|					|No |
 
 
 Note: Only First photo link will priorities.

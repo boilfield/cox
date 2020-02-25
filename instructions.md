@@ -37,7 +37,7 @@ Example : http://cxb-wash.info/Upload/media/f539df99-c983-25d9-cb80-501012db9785
 
    * **Rename the files**
 
-Must be Save as **NGOF Cats4** or **Ashrayan Areas**  *ashrayan.geojson*, **NGOF Cats1** or others *cats1.geojson*, **DSK** *dsk.geojson* and for **VERC** *verc.geojson* named.
+Must be Save as **NGOF Cats4** or **Ashrayan Areas**  *cats4.geojson*, **NGOF Cats1** or others *cats1.geojson*, **DSK** *dsk.geojson* and for **VERC** *verc.geojson* named.
 
    * **Upload File**
    

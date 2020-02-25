@@ -8,9 +8,33 @@ Created By [Atikur Rahman](https://arahmandc.github.io/ "https://arahmandc.githu
 
    +  **Have To download every implementation agencies data separately.**
 
-| NGOF Cats1  | NGOF Cats4   | DSK     | VERC            |
-|-------------|--------------|---------|-----------------|
-| Ukhiya      | 21 Ashrayan  | Teknaf  | Pekua, Chakaria | 
+| NGOF Cats1   | NGOF Cats4                             | DSK           | VERC                |
+|--------------|----------------------------------------|---------------|---------------------|
+| Ukhiya       | 21 Ashrayan                            | Teknaf        | Pekua, Chakaria     |
+|              |                                        |               |                     |
+| Haldia Palong| DinespurAsrayonProjet                  | Baharchhara   | Magnama             |
+| Jalia Palong | MorangonaAsrayon Project               | Nhilla        | Rajakhali           |
+| Palong Khali | KaidabadAsrayon Project-01             | Sabrang       | Ujantia             |
+| Raja Palong  | Uttar ManikporFaithonAsrayon           | Teknaf        | Chiringa            |
+| Ratna Palong | KuniyapalongAsrayon Project            | Whykong       | pashchin boro veula |
+|              | KuniyapalongGoccagramAsrayon           |               |                     |
+|              | WhykhonAsrayonProject                  |               |                     |
+|              | JowarianalaAsrayon Project             |               |                     |
+|              | TholataliAsrayon Project               |               |                     |
+|              | RajarkolAsrayon Project                |               |                     |
+|              | EidgorKormaliamoraAsrayon Project      |               |                     |
+|              | Lombaghonaasrayon project              |               |                     |
+|              | Jaliaparaasrayon project               |               |                     |
+|              | KaidabadAsrayon Project-02             |               |                     |
+|              | Tajiakataadhorsogramasrayon project    |               |                     |
+|              | DokkinDurongZeleAsrayon Project        |               |                     |
+|              | ArmanimaAsrayon Project                |               |                     |
+|              | RupnagarAsrayon Project                |               |                     |
+|              | Panerchoraasrayon                      |               |                     |
+|              | JolsidiAsrayon Project                 |               |                     |
+|              | BadochodaAsrayon Project               |               |                     |
+
+
 
 
 
@@ -42,4 +66,12 @@ Must be Save as **NGOF Cats4** or **Ashrayan Areas**  *cats4.geojson*, **NGOF Ca
    * **Upload File**
    
 Then Upload all geojson in [**data**](https://github.com/boilfield/cox/tree/master/data "Data") folder 
+
+
+
+   *  **Others**
+   
+   For further help [**contact number**](https://github.com/boilfield/cox/tree/master/Contact.md "implementation agencies") are here.
+   
+
 

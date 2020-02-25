@@ -67,3 +67,11 @@ Must be Save as **NGOF Cats4** or **Ashrayan Areas**  *cats4.geojson*, **NGOF Ca
    
 Then Upload all geojson in [**data**](https://github.com/boilfield/cox/tree/master/data "Data") folder 
 
+
+
+   *  **Others**
+   
+   For further help [**contact number**](https://github.com/boilfield/cox/tree/master/Contact.md "implementation agencies") are here.
+   
+
+

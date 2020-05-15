@@ -90,14 +90,14 @@
             }
             var layer = L.geoJson(geojson, {
                 onEachFeature: function(feature, layer) {
-                    var imgPath = feature.properties.Wash_HSO2Image;
-                    console.log(imgPath);
-                    console.log("http://"+imgPath);
-                    var html = '<a href="http://'+imgPath+'" target="_blank"><img width="200px" hight="200px" src="http://'+imgPath+'"</img></a><br/>';
-                    html +='<hr>';
-                    html +='<h2 style="text-align: center;">Details</h2>';
-                    html +='<hr>';
-                    html += 'Collector Name: <b>' + feature.properties.created_by + '</b><br/>';
+                    // var imgPath = feature.properties.Wash_HSO2Image;
+                    // console.log(imgPath);
+                    // console.log("http://"+imgPath);
+                    // var html = '<a href="http://'+imgPath+'" target="_blank"><img width="200px" hight="200px" src="http://'+imgPath+'"</img></a><br/>';
+                    // html +='<hr>';
+                    // html +='<h2 style="text-align: center;">Details</h2>';
+                    // html +='<hr>';
+                   var html = 'Collector Name: <b>' + feature.properties.created_by + '</b><br/>';
                     html += 'Upazila: <b>' + feature.properties.Upazila + '</b><br/>';
                     html += 'Union: <b>' + feature.properties.Union + '</b><br/>';
                     html += 'Ward: <b>' + feature.properties.Ward + '</b><br/>';
@@ -105,6 +105,7 @@
                     html += 'HH HeadName: <b>' + feature.properties.HC5_HHHeadName + '</b><br/>';
                     html += 'Respondent: <b>' + feature.properties.Wash_HC3_gender + '</b><br/>';
                     html += 'Family Members: <b>' + feature.properties.Wash_HC4FamilyMembers + '</b><br/>';
+                    html += 'Mobile Number: <b>' + feature.properties.HC_HouseholdHeadContactNumber + '</b><br/>';
                     html += 'Creation Time: <b>' + feature.properties.create_time + '</b><br/>';
                     html +='<hr>';
                     html += '<a href="http://boiledbhoot.org/" target="_blank"><img width="200px" src="../images/logo.jpg"</img></a><br/>';

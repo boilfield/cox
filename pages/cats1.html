@@ -26,7 +26,7 @@
 <style> 
   #map {
   width: 100%;
-  height: 100%;
+  height: 600px;
 }
 </style>
 
@@ -121,24 +121,11 @@
 
                     layer.bindPopup(html);
                 }
-            // }).addTo(map);
             });
-
-            // var markers = L.markerClusterGroup();
-
-            // var Layer = L.geoJson(geoJsonData, {
-            //   onEachFeature: function (feature, layer) {
-            //     layer.bindPopup(feature.properties.address);
-            //   }
-            // });
             markers.addLayer(layer);
-
             map.addLayer(markers);
             map.fitBounds(markers.getBounds());
 
-
-
-            // map.fitBounds(layer.getBounds());
         });
 
     </script>

@@ -52,13 +52,13 @@ Created By [Atikur Rahman](https://arahmandc.github.io/ "https://arahmandc.githu
 | Family Members:	   | *Wash_HC4FamilyMembers* | BE					    | No
 | Creation Time:		 | *create_time*			     | J					    | No
 | Geo Location:		   | *yx*						         | AZ					    | Yes
-| Mobile number        |  *HC_HouseholdHeadContactNumber *   |                     | Yes
+| Mobile number        |  HC_HouseholdHeadContactNumber    |                     | Yes
 | Toilet photo:      | *Wash_HSO2Image*  		   |					      | No |
 
 
    *  **Note: Only First photo link will priorities**.
 
-Photo is not mandatory.
+**Photo is not mandatory.**
 
 Example : http://cxb-wash.info/Upload/media/f539df99-c983-25d9-cb80-501012db9785.jpg
 

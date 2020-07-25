@@ -1,4 +1,4 @@
-https://boilfield.github.io/cox/
+https://cox.mapbd.xyz
 
 
 

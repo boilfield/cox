@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 
-    <title>Chakoria</title>
+    <title>Maheshkhali</title>
 
     <link rel="shortcut icon" type="image/x-icon" href="../favicon.ico">
 
@@ -19,6 +19,7 @@
     <link rel="stylesheet" href="../dist/MarkerCluster.css" />
     <link rel="stylesheet" href="../dist/MarkerCluster.Default.css" />
     <script src="../dist/leaflet.markercluster-src.js"></script>
+
 
 <link href="../layout/styles/layout.css" rel="stylesheet" type="text/css" media="all">
 <style> 
@@ -46,21 +47,21 @@
       <!-- ################################################################################################ -->
          <ul class="clear">
         <li><a href="../index.html">Project Area</a></li>
-        <li><a class="drop">Field Data</a>
+        <li><a class="drop" >Field Data</a>
            <ul>
             <!-- <li><a href="pages/cats1.html">NGOF । CATS1</a></li>
             <li><a href="pages/cats4.html">NGOF । CATS4</a></li>
             <li><a href="pages/verc.html">VERC</a></li>
             <li><a href="pages/dsk.html">DSK</a></li> -->
-            <li><a href="pages/ars/kutubdia.html">Kutubdia</a></li>
-            <li><a href="pages/ars/maheshkhali.html">Maheshkhali</a></li>
-            <li><a href="pages/ars/chakoria.html">Chakoria</a></li>
-            <li><a href="pages/ars/ukhiya.html">Ukhiya</a></li>
-            <li><a href="pages/ars/pekua.html">Pekua</a></li>
-            <li><a href="pages/ars/teknaf.html">Teknaf</a></li>
+            <li><a href="pages/kutubdia.html">Kutubdia</a></li>
+            <li><a href="pages/maheshkhali.html">Maheshkhali</a></li>
+            <li><a href="pages/chakoria.html">Chakoria</a></li>
+            <li><a href="pages/ukhiya.html">Ukhiya</a></li>
+            <li><a href="pages/pekua.html">Pekua</a></li>
+            <li><a href="pages/teknaf.html">Teknaf</a></li>
           </ul>
         </li>
-        <li><a class="drop">Help</a>
+        <li><a class="drop" >Help</a>
           <ul>
             <li><a href="../pages/que.html">Questionnaires</a></li>
             <li><a href="../pages/inventory_approval.html">Inventory Approval</a></li>
@@ -91,13 +92,14 @@
             'Imagery © <a href="https://www.google.com/maps/" target="_blank">Google Hyderabad</a>',
         }).addTo(map);
         
-        $.get('../data/chakoria.geojson', function (data) {
+        $.get('../data/maheshkhali.geojson', function (data) {
             var geojson = null;
             if (typeof data === 'string') {
                 geojson = JSON.parse(data)
             } else {
                 geojson = data;
             }
+
             var markers = L.markerClusterGroup();
 
             var layer = L.geoJson(geojson, {
@@ -113,6 +115,7 @@
                     html += 'Upazila: <b>' + feature.properties.Upazila + '</b><br/>';
                     html += 'Union: <b>' + feature.properties.Union + '</b><br/>';
                     html += 'Ward: <b>' + feature.properties.Ward + '</b><br/>';
+                    html += 'Ward: <b>' + feature.properties.Community + '</b><br/>';
                     html += 'Community: <b>' + feature.properties.Community + '</b><br/>';
                     html += 'CAP ID: <b>' + feature.properties.HH_CAP_ID + '</b><br/>';
                     html += 'HH HeadName: <b>' + feature.properties.HC5_HHHeadName + '</b><br/>';

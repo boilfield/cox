@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 
-    <title>Teknaf</title>
+    <title>Chakoria</title>
 
     <link rel="shortcut icon" type="image/x-icon" href="../favicon.ico">
 
@@ -46,18 +46,18 @@
       <!-- ################################################################################################ -->
          <ul class="clear">
         <li><a href="../index.html">Project Area</a></li>
-        <li><a class="drop" >Field Data</a>
+        <li><a class="drop">Field Data</a>
            <ul>
             <!-- <li><a href="pages/cats1.html">NGOF । CATS1</a></li>
             <li><a href="pages/cats4.html">NGOF । CATS4</a></li>
             <li><a href="pages/verc.html">VERC</a></li>
             <li><a href="pages/dsk.html">DSK</a></li> -->
-            <li><a href="pages/ars/kutubdia.html">Kutubdia</a></li>
-            <li><a href="pages/ars/maheshkhali.html">Maheshkhali</a></li>
-            <li><a href="pages/ars/chakoria.html">Chakoria</a></li>
-            <li><a href="pages/ars/ukhiya.html">Ukhiya</a></li>
-            <li><a href="pages/ars/pekua.html">Pekua</a></li>
-            <li><a href="pages/ars/teknaf.html">Teknaf</a></li>
+            <li><a href="pages/kutubdia.html">Kutubdia</a></li>
+            <li><a href="pages/maheshkhali.html">Maheshkhali</a></li>
+            <li><a href="pages/chakoria.html">Chakoria</a></li>
+            <li><a href="pages/ukhiya.html">Ukhiya</a></li>
+            <li><a href="pages/pekua.html">Pekua</a></li>
+            <li><a href="pages/teknaf.html">Teknaf</a></li>
           </ul>
         </li>
         <li><a class="drop">Help</a>
@@ -91,7 +91,7 @@
             'Imagery © <a href="https://www.google.com/maps/" target="_blank">Google Hyderabad</a>',
         }).addTo(map);
         
-        $.get('../data/teknaf.geojson', function (data) {
+        $.get('../data/chakoria.geojson', function (data) {
             var geojson = null;
             if (typeof data === 'string') {
                 geojson = JSON.parse(data)
@@ -134,11 +134,11 @@
     </script>
 
 <!-- JAVASCRIPTS -->
-<script src="layout/scripts/jquery.min.js"></script>
-<script src="layout/scripts/jquery.backtotop.js"></script>
-<script src="layout/scripts/jquery.mobilemenu.js"></script>
+<script src="../layout/scripts/jquery.min.js"></script>
+<script src="../layout/scripts/jquery.backtotop.js"></script>
+<script src="../layout/scripts/jquery.mobilemenu.js"></script>
 <!-- Homepage specific -->
-<script src="layout/scripts/jquery.easypiechart.min.js"></script>
+<script src="../layout/scripts/jquery.easypiechart.min.js"></script>
 <!-- / Homepage specific -->
 </body>
 </html>

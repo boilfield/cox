@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<!-- To declare your language - read more here: https://www.w3.org/International/questions/qa-html-language-declarations -->
+<head>
+  <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <title>Kutubdia</title>
+
+    <link rel="shortcut icon" type="image/x-icon" href="../favicon.ico">
+
+    <link rel="stylesheet" href="//cdn.leafletjs.com/leaflet-0.7.2/leaflet.css" />
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.1/dist/leaflet.css" integrity="sha512-Rksm5RenBEKSKFjgI3a41vrjkw4EVPlJ3+OiI65vTjIdo9brlAacEuKOiQ5OFh7cOI1bkDwLqdLw3Zg0cRJAAQ==" crossorigin="">
+    <script src="https://unpkg.com/leaflet@1.3.1/dist/leaflet.js" integrity="sha512-/Nsx9X4HebavoBvEBuyp3I7od5tA0UzAxs+j83KgC8PU0kgB4XiK4Lfe4y4cgBtaRJQEIFCW+oC506aPT2L1zw==" crossorigin=""></script>
+
+    <link rel="stylesheet" href="../dist/MarkerCluster.css" />
+    <link rel="stylesheet" href="../dist/MarkerCluster.Default.css" />
+    <script src="../dist/leaflet.markercluster-src.js"></script>
+
+
+
+<link href="../layout/styles/layout.css" rel="stylesheet" type="text/css" media="all">
+<style> 
+  #map {
+  width: 100%;
+  height: 600px;
+}
+</style>
+
+
+
+</head>
+<body id="top">
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<div class="wrapper row1">
+  <header id="header" class="hoc clear">
+    <div id="logo" class="fl_left"> 
+      <!-- ################################################################################################ -->
+      <h1  style="color: #fff; margin-top: 20px" ><a href="../index.html" style="font-size: 30px">Cox's Bazar Wash</a></h1>
+      <!-- ################################################################################################ -->
+    </div>
+    <nav id="mainav" class="fl_right"> 
+      <!-- ################################################################################################ -->
+         <ul class="clear">
+        <li><a href="../index.html">Project Area</a></li>
+        <li><a class="drop">Field Data</a>
+           <ul>
+            <!-- <li><a href="pages/cats1.html">NGOF । CATS1</a></li>
+            <li><a href="pages/cats4.html">NGOF । CATS4</a></li>
+            <li><a href="pages/verc.html">VERC</a></li>
+            <li><a href="pages/dsk.html">DSK</a></li> -->
+            <li><a href="pages/ars/kutubdia.html">Kutubdia</a></li>
+            <li><a href="pages/ars/maheshkhali.html">Maheshkhali</a></li>
+            <li><a href="pages/ars/chakoria.html">Chakoria</a></li>
+            <li><a href="pages/ars/ukhiya.html">Ukhiya</a></li>
+            <li><a href="pages/ars/pekua.html">Pekua</a></li>
+            <li><a href="pages/ars/teknaf.html">Teknaf</a></li>
+          </ul>
+        </li>
+        <li><a class="drop">Help</a>
+          <ul>
+            <li><a href="../pages/que.html">Questionnaires</a></li>
+            <li><a href="../pages/inventory_approval.html">Inventory Approval</a></li>
+            <li><a href="../pages/inventory.html">Inventory</a></li>
+          </ul>
+        </li>
+        <li><a href="../pages/about.html">About</a></li>
+        <li><a href="../pages/blog.html">Blog</a></li>
+      </ul>
+      <!-- ################################################################################################ -->
+    </nav>
+  </header>
+  <!--  map -->
+       <div id="map"></div>
+
+<!-- footer  -->
+
+    <script src="//cdn.leafletjs.com/leaflet-0.7.2/leaflet-src.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+
+    <script>
+        var map = L.map('map').setView([23.634,90.648], 7);
+
+        
+        L.tileLayer('https://mt1.google.com/vt/lyrs=y&x={x}&y={y}&z={z}', {
+            opacity: 1.0,
+            attribution: 'Map data &copy; <a href="http://cxb-wash.info/" target="_blank">Coxs Bazar GOB-UNICEF WASH Programme</a> contributors, ' +'Builder &copy; <a href="https://arahmandc.github.io/" target="_blank">Atikur Rahman</a>, '+
+            'Imagery © <a href="https://www.google.com/maps/" target="_blank">Google Hyderabad</a>',
+        }).addTo(map);
+        
+        $.get('../data/kutubdia.geojson', function (data) {
+            var geojson = null;
+            if (typeof data === 'string') {
+                geojson = JSON.parse(data)
+            } else {
+                geojson = data;
+            }
+
+            var markers = L.markerClusterGroup();
+
+            var layer = L.geoJson(geojson, {
+                onEachFeature: function(feature, layer) {
+                    // var imgPath = feature.properties.Wash_HSO2Image;
+                    // console.log(imgPath);
+                    // console.log("http://"+imgPath);
+                    // var html = '<a href="http://'+imgPath+'" target="_blank"><img width="200px" hight="200px" src="http://'+imgPath+'"</img></a><br/>';
+                    // html +='<hr>';
+                    // html +='<h2 style="text-align: center;">Details</h2>';
+                    // html +='<hr>';
+                   var html = 'Collector Name: <b>' + feature.properties.created_by + '</b><br/>';
+                    html += 'Upazila: <b>' + feature.properties.Upazila + '</b><br/>';
+                    html += 'Union: <b>' + feature.properties.Union + '</b><br/>';
+                    html += 'Ward: <b>' + feature.properties.Ward + '</b><br/>';
+                    html += 'Community: <b>' + feature.properties.Community + '</b><br/>';
+                    html += 'CAP ID: <b>' + feature.properties.HH_CAP_ID + '</b><br/>';
+                    html += 'HH HeadName: <b>' + feature.properties.HC5_HHHeadName + '</b><br/>';
+                    html += 'Respondent: <b>' + feature.properties.Wash_HC3_gender + '</b><br/>';
+                    html += 'Family Members: <b>' + feature.properties.Wash_HC4FamilyMembers + '</b><br/>';
+                    html += 'Mobile Number: <b>' + feature.properties.HC_HouseholdHeadContactNumber + '</b><br/>';
+                    html += 'Creation Time: <b>' + feature.properties.create_time + '</b><br/>';
+                    html +='<hr>';
+                    html += '<a href="http://boiledbhoot.org/" target="_blank"><img width="200px" src="../images/logo.jpg"</img></a><br/>';
+
+                    layer.bindPopup(html);
+                }
+            });
+            markers.addLayer(layer);
+            map.addLayer(markers);
+            map.fitBounds(markers.getBounds());
+
+        });
+
+    </script>
+
+<!-- JAVASCRIPTS -->
+<script src="../layout/scripts/jquery.min.js"></script>
+<script src="../layout/scripts/jquery.backtotop.js"></script>
+<script src="../layout/scripts/jquery.mobilemenu.js"></script>
+<!-- Homepage specific -->
+<script src="../layout/scripts/jquery.easypiechart.min.js"></script>
+<!-- / Homepage specific -->
+</body>
+</html>
